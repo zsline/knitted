@@ -16,7 +16,6 @@ collections:
         fields:
           - name: items
             label: "Список изделий"
-            label_singleton: "Изделие"
             widget: "list"
             summary: "{{fields.title}} ({{fields.price}} руб.)"
             fields:
