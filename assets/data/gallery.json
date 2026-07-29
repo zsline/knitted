@@ -10,7 +10,10 @@
         "Белый"
       ],
       "desc": "Серая плюшевая зайка с вязаной морковкой в руках у девочки во дворе Ханского дворца.",
-      "gallery": [],
+      "gallery": [
+        "assets/img/79f746d3-50a6-4545-9e48-ca6dbc7a69ba.png",
+        "assets/img/ec8d3142-f26a-452d-b2c5-c634891e4487.png"
+      ],
       "top": true,
       "title": "Зайка в Бахчисарае",
       "id": "zayka-v-bakhchisarae",
