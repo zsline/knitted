@@ -1,0 +1,399 @@
+{
+  "items": [
+    {
+      "id": "zayka-v-bakhchisarae",
+      "src": "assets/img/девочка_с_игрушкой_в_бахчисарае.jpg",
+      "category": "toys",
+      "title": "Зайка в Бахчисарае",
+      "desc": "Серая плюшевая зайка с вязаной морковкой в руках у девочки во дворе Ханского дворца.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": true
+    },
+    {
+      "id": "progulka-po-yalte",
+      "src": "assets/img/девушка_на_набережной_ялты.jpg",
+      "category": "accessories",
+      "title": "Прогулка по Ялте",
+      "desc": "Стильная вязаная сумочка с фиолетовым геометрическим узором и плюшевый мишка на фоне моря.",
+      "price": "4500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": true
+    },
+    {
+      "id": "piknik-na-trave",
+      "src": "assets/img/82b58741-0fcb-42ed-98a1-46c5fe4f4613.jpg",
+      "category": "toys",
+      "title": "Пикник на траве",
+      "desc": "Милые вязаные зайчата на пикнике в теплый летний день.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "druzya-na-lugu",
+      "src": "assets/img/881b7452-7d72-4a5a-ac40-03232ce4dc91.jpg",
+      "category": "toys",
+      "title": "Друзья на лугу",
+      "desc": "Вязаные щенки в штанишках на прогулке среди ромашек и маков.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "zayki-v-detskoy",
+      "src": "assets/img/f34ed442-91a5-4012-89e5-f0b9b06b88ec.jpg",
+      "category": "toys",
+      "title": "Зайки в детской",
+      "desc": "Пара мягких плюшевых зайчат в уютном интерьере детской комнаты.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "sinie-kedy-pod-sofitami",
+      "src": "assets/img/79f746d3-50a6-4545-9e48-ca6dbc7a69ba.png",
+      "category": "clothes_shoes",
+      "title": "Синие кеды под софитами",
+      "desc": "Эксклюзивные вязаные кроссовки на каменном постаменте в студийном свете.",
+      "price": "5500",
+      "materials": "Прочная хлопковая пряжа, мягкая текстильная подошва, надежные шнурки.",
+      "colors": [
+        "Синий",
+        "Голубой",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "vyazanye-kedy-na-zakate",
+      "src": "assets/img/ec8d3142-f26a-452d-b2c5-c634891e4487.png",
+      "category": "clothes_shoes",
+      "title": "Вязаные кеды на закате",
+      "desc": "Стильные вязаные кроссовки ручной работы на берегу моря в золотистых лучах солнца.",
+      "price": "5500",
+      "materials": "Прочная хлопковая пряжа, мягкая текстильная подошва, надежные шнурки.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": true
+    },
+    {
+      "id": "detskiy-khlopkovyy-kostyum",
+      "src": "assets/img/M6LARJ3kfVI148YX9OQYSJAcnteLpwwA2enxTzuor_wDlPCWoQ_R-Vr4R0PIPlQWRRqRQaCDRx1ZmyUQcIW_TbvF.jpg",
+      "category": "clothes_shoes",
+      "title": "Детский хлопковый костюм",
+      "desc": "Мягкий желто-белый свитер и белые штанишки ручной работы для малыша.",
+      "price": "5500",
+      "materials": "Мягкая полушерстяная пряжа (меринос/акрил), натуральные деревянные пуговицы.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": true
+    },
+    {
+      "id": "kostyumchik-s-kapyushonom",
+      "src": "assets/img/O-0NSJCGIf2Zqj6zfsHfQf8O5_Ve-WQsFkZzQgjAvcTeUqfX2ZYXlYoLHv7o9CITwRAHPOSmucz5Ec_daHfAARPi.jpg",
+      "category": "clothes_shoes",
+      "title": "Костюмчик с капюшоном",
+      "desc": "Полосатый детский кардиган с деревянными пуговицами и коричневые штанишки.",
+      "price": "5500",
+      "materials": "Мягкая полушерстяная пряжа (меринос/акрил), натуральные деревянные пуговицы.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "rozhdenie-dinozavrikov",
+      "src": "assets/img/aE6P_JAJxW854HsI0Onu_0Y-GnQ2dGdfdd6P-p4KhfdYkT4LuiZQybwKzHltGU_5Sv9ciunGXK_C4drMhn5VjUPt.jpg",
+      "category": "toys",
+      "title": "Рождение динозавриков",
+      "desc": "Зеленые вязаные динозавры на рабочем столе автора рядом с инструментами.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "yarko-krasnaya-sumochka",
+      "src": "assets/img/wHPfP6gjiqlDF2e03vGueJrXzvYZlmDjRBruWaAg0wqONoUnlz7Ia9JlgeP1Chgddofw4xKY0gRpZehujgiBEaKD.jpg",
+      "category": "accessories",
+      "title": "Ярко-красная сумочка",
+      "desc": "Авторская вязаная сумочка через плечо с кожаной биркой HAND MADE.",
+      "price": "4500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Красный",
+        "Бордовый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "fioletovyy-klatch",
+      "src": "assets/img/5PkQaQkqA_7GlDWLCKN_WEBQ-q_WttVlFYM9N_IcWNvOJ-D04XDLl5b-EyZnG_EGU4o3ZK2soDN9BYP97Jt2kPwk.jpg",
+      "category": "accessories",
+      "title": "Фиолетовый клатч",
+      "desc": "Вязаный вечерний клатч с геометрическим узором и металлической цепочкой.",
+      "price": "4500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Фиолетовый",
+        "Сиреневый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "malenkiy-drakonchik",
+      "src": "assets/img/30sFTcI29XarFQg7iATSnKFgUiKVU4FjNtim4jgNM13HdqT1Cyv8iQY6GJEMo4I-joeqwlmDIgSYchdzK7Nyem3U.jpg",
+      "category": "toys",
+      "title": "Маленький дракончик",
+      "desc": "Нежно-зеленый вязаный дракоша ручной работы, связанный крючком.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Зеленый",
+        "Мятный"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "plyushevyy-mishutka",
+      "src": "assets/img/31DXVThxlurCJL2Hy38k3A3LTFFtwrG9ueqBvKX6V-jJxMtwYEJ8zd_-P6vu_sDSpnum3Y1c_ngG4tua4JZkExuP.jpg",
+      "category": "toys",
+      "title": "Плюшевый мишутка",
+      "desc": "Мягкий вязаный медвежонок из гипоаллергенной плюшевой пряжи.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "raduzhnye-zaychata",
+      "src": "assets/img/6HVyHfd56MQOV93HkvIf3-giFArP5jaPV6DR4zydJUQ8H3zAT71cUVZzxhFUgrj_hivPehDpaRHQcdCgQf8dL1ft.jpg",
+      "category": "toys",
+      "title": "Радужные зайчата",
+      "desc": "Пара длинноухих зайчиков из разноцветной меланжевой пряжи.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "vyazanyy-kardigan",
+      "src": "assets/img/F_mvRzDIFYwP5yYPaJY9QABe5ZtjJkjd9YKJW2-TPD5SyvVZZAad5kAVqk9hJZWBOMJfS6J0vSC51WCRjLj0Arvx.jpg",
+      "category": "clothes_shoes",
+      "title": "Вязаный кардиган",
+      "desc": "Уютный женский кардиган молочного цвета крупной вязки.",
+      "price": "5500",
+      "materials": "Мягкая полушерстяная пряжа (меринос/акрил), натуральные деревянные пуговицы.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "zayka-v-krasnom-plate",
+      "src": "assets/img/Onvfo8qoKLaMibIby3sciAPXCOWETqPa71h70JQWjcMozJ1G07BXish-JSV9ivSVy2Ul-WJdBDr9iuFTDTvkKkZq.jpg",
+      "category": "toys",
+      "title": "Зайка в красном платье",
+      "desc": "Плюшевая зайка сиреневого оттенка в нарядном красном платье.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Красный",
+        "Бордовый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "myshka-v-sinem-sarafane",
+      "src": "assets/img/PQGgxTn6Nca4txeHLnIqWZgoFhV4X6aji0hd8Wf0n3k8toIM6s_PDqm_7JPI3syEXhkZXRh9PFNgacWtL6_ZFVsx.jpg",
+      "category": "toys",
+      "title": "Мышка в синем сарафане",
+      "desc": "Вязаная мышка с большими ушками в синем вязаном платье.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "veselyy-lyagushonok",
+      "src": "assets/img/Xop7XoEPn1BTDrtu0JIlt8ZrmlsLQDZaBLeyqypcxADTsu1A-UI86NdNFGHau5qY_vsZ1FS7jeigk0Tql72899TT.jpg",
+      "category": "toys",
+      "title": "Веселый лягушонок",
+      "desc": "Зеленый вязаный лягушонок в синем комбинезоне с белой отделкой.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Зеленый",
+        "Мятный"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "peschanye-dinozavry",
+      "src": "assets/img/cnk1MwhapicwB5d4IZN-rmmkAWYNbaN4x2A0yoW4z3YPEeCnVxCK_BQa6Nh1Ixf74bXQiYcX_dSQxzu-zTM9BMrW.jpg",
+      "category": "toys",
+      "title": "Песчаные динозавры",
+      "desc": "Пара вязаных динозавров бежевого оттенка на рабочем столе автора.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "vyazanye-elochki",
+      "src": "assets/img/fptb2ts0YdxyLlnS6AtCumbc0UGPw4_-YG0yQniKIS7m9IiwPDiZTwSYLv9a3sdk7rNPuZRLxqh6a2uMBekq52tR.jpg",
+      "category": "accessories",
+      "title": "Вязаные елочки",
+      "desc": "Набор декоративных вязаных елочек для украшения новогоднего интерьера.",
+      "price": "4500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "schenki-amigurumi",
+      "src": "assets/img/hkgTSHZ1nWoI6kjOv7wK-BFJFMfP9Q-FlkPQWVhQ2SI0_Iw7wG8zge_yvsssHH_z3fBXZ-aKa3oKzJxyzhayEYfs.jpg",
+      "category": "toys",
+      "title": "Щенки-амигуруми",
+      "desc": "Мягкие вязаные щенки в штанишках на сером студийном фоне.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": true
+    },
+    {
+      "id": "protsess-vyazki-zayki",
+      "src": "assets/img/i2r7f6bIZc-TcyiIAXTl15cHrS61_Qs4I7_sVYFsdo3QwVNqDU2OkRVYotQiHTyUiWVth3r2o01PwjQfN5dGUqIy.jpg",
+      "category": "toys",
+      "title": "Процесс вязки зайки",
+      "desc": "Серая зайка и вязаная морковка в корзинке для рукоделия рядом с ноутбуком.",
+      "price": "3500",
+      "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "kedy-v-protsesse-raboty",
+      "src": "assets/img/sma8n_8Iwmy_M2_sgTRcobboOBO4SW1B4TXsj9nETLdKETcsE7H6PguarV7jvhfH3fabVppDhMpzGtCG0juKMMdd.jpg",
+      "category": "clothes_shoes",
+      "title": "Кеды в процессе работы",
+      "desc": "Синий вязаный кроссовок на клавиатуре ноутбука и спицы для носков.",
+      "price": "5500",
+      "materials": "Прочная хлопковая пряжа, мягкая текстильная подошва, надежные шнурки.",
+      "colors": [
+        "Синий",
+        "Голубой",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    },
+    {
+      "id": "pinetki-krossovki",
+      "src": "assets/img/tezff2n4zW38-YjRlLi7kZBAjjT51YOD6pXYIcMxNqzWhXcXeTIS1-5tTSp88vIkZ2HCcnQ29yOW5zhB-2yFMd8d.jpg",
+      "category": "clothes_shoes",
+      "title": "Пинетки-кроссовки",
+      "desc": "Вязаные детские пинетки в виде спортивных кроссовок серо-синей расцветки.",
+      "price": "5500",
+      "materials": "Прочная хлопковая пряжа, мягкая текстильная подошва, надежные шнурки.",
+      "colors": [
+        "Серый",
+        "Розовый",
+        "Белый"
+      ],
+      "gallery": [],
+      "top": false
+    }
+  ]
+}

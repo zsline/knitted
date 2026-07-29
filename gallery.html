@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Галерея работ Натальи Праотцевой | Вязаные игрушки и одежда ручной работы</title>
+  <meta name="description" content="Полный каталог вязаных изделий Натальи Праотцевой. Игрушки амигуруми, дизайнерские сумочки и вязаная обувь с ценами и возможностью заказа.">
+  <meta name="keywords" content="вязание ручной работы, каталог игрушек, амигуруми Челябинск, вязаные сумки цены, купить вязаную одежду">
+  <meta name="author" content="Наталья Праотцева">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Каталог вязаных изделий Натальи Праотцевой | Ручная работа">
+  <meta property="og:description" content="Посмотрите все работы ручной вязки: игрушки, сумки, кардиганы и обувь. Узнайте цены и закажите индивидуальный дизайн.">
+  <meta property="og:image" content="assets/img/женщина_и_игрушки_на_набережной_ялты.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo" id="siteLogo">
+        НАТАЛЬЯ ПРАОТЦЕВА
+        <span>Мастерская вязаного уюта</span>
+      </a>
+      
+      <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Главная</a>
+        <a href="index.html#categories">Направления</a>
+        <a href="#" class="active">Галерея работ</a>
+        <a href="index.html#about">Об авторе</a>
+        <a href="index.html#contact" class="btn-contact">Заказать</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-page" id="portfolioPage" style="padding-top: 140px; min-height: 80vh;">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-subtitle">Каталог изделий</span>
+        <h1 class="section-title">Галерея авторских работ</h1>
+        <p class="section-desc">Здесь представлены все изделия, созданные в нашей мастерской. Кликните на любую работу, чтобы узнать подробные характеристики (материалы, цвета) и сделать заказ.</p>
+      </div>
+      
+      <!-- Filter Controls -->
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">Все изделия</button>
+        <button class="filter-btn" data-filter="toys">Игрушки</button>
+        <button class="filter-btn" data-filter="accessories">Аксессуары</button>
+        <button class="filter-btn" data-filter="clothes_shoes">Одежда и обувь</button>
+      </div>
+      
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- RENDERED DYNAMICALLY VIA JAVASCRIPT -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          НАТАЛЬЯ ПРАОТЦЕВА
+          <span>Мастерская вязаного уюта</span>
+        </a>
+        <p>Создание уникальных вязаных игрушек, сумок и одежды ручной работы из экологически чистых материалов.</p>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html#categories">Направления</a></li>
+          <li><a href="#">Галерея работ</a></li>
+          <li><a href="index.html#about">Об авторе</a></li>
+          <li><a href="index.html#contact">Сделать заказ</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3>Контакты</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Россия, г. Челябинск</p>
+        <p><i class="fa-solid fa-envelope"></i> natalia.praotseva@mail.ru</p>
+        <p><i class="fa-solid fa-paper-plane"></i> Telegram: @Natalia_Praotseva</p>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Мастерская Натальи Праотцевой. Все права защищены.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия заказа</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

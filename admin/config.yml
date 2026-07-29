@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "knitted/assets/img"
+public_folder: "assets/img"
+
+collections:
+  - name: "data"
+    label: "Данные сайта"
+    files:
+      - file: "knitted/assets/data/gallery.json"
+        name: "gallery"
+        label: "Каталог изделий"
+        format: "json"
+        fields:
+          - name: items
+            label: "Список изделий"
+            label_singleton: "Изделие"
+            widget: "list"
+            summary: "{{fields.title}} ({{fields.price}} руб.)"
+            fields:
+              - { label: "Идентификатор (латиницей, например: rabbit-toy)", name: "id", widget: "string" }
+              - { label: "Название", name: "title", widget: "string" }
+              - { label: "Категория", name: "category", widget: "select", options: [{label: "Игрушки", value: "toys"}, {label: "Аксессуары", value: "accessories"}, {label: "Одежда и Обувь", value: "clothes_shoes"}] }
+              - { label: "Цена (в рублях, например: 2800)", name: "price", widget: "string" }
+              - { label: "Материалы", name: "materials", widget: "text" }
+              - { label: "Доступные цвета", name: "colors", widget: "list", default: ["Серый", "Белый"] }
+              - { label: "Главное фото", name: "src", widget: "image" }
+              - { label: "Галерея дополнительных фото", name: "gallery", widget: "list", field: {label: "Изображение", widget: "image"}, required: false }
+              - { label: "Показывать на главной (Top)", name: "top", widget: "boolean", default: false }
+              - { label: "Описание", name: "desc", widget: "text" }

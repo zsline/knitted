@@ -41,7 +41,7 @@
       <nav class="nav-links" id="navLinks">
         <a href="#" class="active">Главная</a>
         <a href="#categories">Направления</a>
-        <a href="#portfolio">Галерея работ</a>
+        <a href="gallery.html">Галерея работ</a>
         <a href="#about">Об авторе</a>
         <a href="#contact" class="btn-contact">Заказать</a>
       </nav>
@@ -98,7 +98,7 @@
             <h3 class="category-title">Сумки и аксессуары</h3>
             <p class="category-desc">Дизайнерские женские сумки, вечерние клатчи через плечо и праздничный декор. Подчеркнут вашу индивидуальность и добавят яркий акцент образу.</p>
           </div>
-          <a href="#portfolio" class="category-link">Смотреть в галерее <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="gallery.html" class="category-link">Смотреть в галерее <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         
         <!-- Category Card 3 -->
@@ -110,51 +110,37 @@
             <h3 class="category-title">Одежда и обувь</h3>
             <p class="category-desc">Эксклюзивные вязаные кеды и кроссовки, мягкие детские костюмы и уютные взрослые кардиганы из качественной хлопковой и шерстяной пряжи.</p>
           </div>
-          <a href="#portfolio" class="category-link">Смотреть в галерее <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="gallery.html" class="category-link">Смотреть в галерее <i class="fa-solid fa-arrow-right"></i></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
+  <!-- Featured Products Slider Section -->
   <section class="portfolio" id="portfolio">
     <div class="section-container">
       <div class="section-header">
-        <span class="section-subtitle">Портфолио</span>
-        <h2 class="section-title">Галерея готовых изделий</h2>
-        <p class="section-desc">Посмотрите на работы, созданные в нашей мастерской. Вы можете выбрать любую модель для повтора или заказать уникальный дизайн.</p>
+        <span class="section-subtitle">Избранные работы</span>
+        <h2 class="section-title">Популярные изделия</h2>
+        <p class="section-desc">Посмотрите на некоторые из наших лучших работ. Вы можете кликнуть на любую карту для перехода на страницу детального описания.</p>
       </div>
       
-      <!-- Filter Controls -->
-      <div class="filter-controls">
-        <button class="filter-btn active" data-filter="all">Все изделия</button>
-        <button class="filter-btn" data-filter="toys">Игрушки</button>
-        <button class="filter-btn" data-filter="accessories">Аксессуары</button>
-        <button class="filter-btn" data-filter="clothes_shoes">Одежда и обувь</button>
+      <!-- Slider/Carousel Container -->
+      <div class="slider-wrapper">
+        <button class="slider-arrow slider-prev" id="sliderPrev" aria-label="Назад"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="slider-container" id="sliderContainer">
+          <div class="slider-track" id="sliderTrack">
+            <!-- RENDERED DYNAMICALLY VIA JAVASCRIPT -->
+          </div>
+        </div>
+        <button class="slider-arrow slider-next" id="sliderNext" aria-label="Вперед"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
-      
-      <!-- Gallery Grid -->
-      <div class="gallery-grid" id="galleryGrid">
-        <!-- RENDERED DYNAMICALLY VIA JAVASCRIPT -->
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="gallery.html" class="btn-primary">Перейти в полный каталог</a>
       </div>
     </div>
   </section>
-
-  <!-- Lightbox Modal -->
-  <div class="lightbox" id="lightbox">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
-    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Назад"><i class="fa-solid fa-chevron-left"></i></button>
-    
-    <div class="lightbox-content">
-      <img src="" alt="" class="lightbox-img" id="lightboxImg">
-      <div class="lightbox-caption">
-        <h3 class="lightbox-title" id="lightboxTitle">Название работы</h3>
-        <p class="lightbox-desc" id="lightboxDesc">Описание работы и материалы.</p>
-      </div>
-    </div>
-    
-    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Вперед"><i class="fa-solid fa-chevron-right"></i></button>
-  </div>
 
   <!-- About Section -->
   <section class="about" id="about">
@@ -322,11 +308,11 @@
       <div class="footer-links">
         <h3>Разделы</h3>
         <ul>
-          <li><a href="#home">Главная</a></li>
-          <li><a href="#categories">Направления</a></li>
-          <li><a href="#portfolio">Галерея работ</a></li>
-          <li><a href="#about">Об авторе</a></li>
-          <li><a href="#contact">Сделать заказ</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html#categories">Направления</a></li>
+          <li><a href="gallery.html">Галерея работ</a></li>
+          <li><a href="index.html#about">Об авторе</a></li>
+          <li><a href="index.html#contact">Сделать заказ</a></li>
         </ul>
       </div>
       

@@ -1,167 +1,5 @@
-// Gallery data of Natalia Praotseva's works
-const galleryData = [
-  {
-    "category": "toys",
-    "title": "Зайка в Бахчисарае",
-    "desc": "Серая плюшевая зайка с вязаной морковкой в руках у девочки во дворе Ханского дворца."
-  },
-  {
-    "category": "accessories",
-    "title": "Прогулка по Ялте",
-    "desc": "Стильная вязаная сумочка с фиолетовым геометрическим узором и плюшевый мишка на фоне моря."
-  },
-
-  {
-    "category": "toys",
-    "title": "Пикник на траве",
-    "desc": "Милые вязаные зайчата на пикнике в теплый летний день."
-  },
-  {
-    "category": "toys",
-    "title": "Друзья на лугу",
-    "desc": "Вязаные щенки в штанишках на прогулке среди ромашек и маков."
-  },
-  {
-    "category": "toys",
-    "title": "Зайки в детской",
-    "desc": "Пара мягких плюшевых зайчат в уютном интерьере детской комнаты."
-  },
-  {
-    "category": "clothes_shoes",
-    "title": "Синие кеды под софитами",
-    "desc": "Эксклюзивные вязаные кроссовки на каменном постаменте в студийном свете."
-  },
-  {
-    "category": "clothes_shoes",
-    "title": "Вязаные кеды на закате",
-    "desc": "Стильные вязаные кроссовки ручной работы на берегу моря в золотистых лучах солнца."
-  },
-  {
-    "category": "clothes_shoes",
-    "title": "Детский хлопковый костюм",
-    "desc": "Мягкий желто-белый свитер и белые штанишки ручной работы для малыша."
-  },
-  {
-    "category": "clothes_shoes",
-    "title": "Костюмчик с капюшоном",
-    "desc": "Полосатый детский кардиган с деревянными пуговицами и коричневые штанишки."
-  },
-  {
-    "category": "toys",
-    "title": "Рождение динозавриков",
-    "desc": "Зеленые вязаные динозавры на рабочем столе автора рядом с инструментами."
-  },
-  {
-    "category": "accessories",
-    "title": "Ярко-красная сумочка",
-    "desc": "Авторская вязаная сумочка через плечо с кожаной биркой HAND MADE."
-  },
-  {
-    "category": "accessories",
-    "title": "Фиолетовый клатч",
-    "desc": "Вязаный вечерний клатч с геометрическим узором и металлической цепочкой."
-  },
-  {
-    "category": "toys",
-    "title": "Маленький дракончик",
-    "desc": "Нежно-зеленый вязаный дракоша ручной работы, связанный крючком."
-  },
-  {
-    "category": "toys",
-    "title": "Плюшевый мишутка",
-    "desc": "Мягкий вязаный медвежонок из гипоаллергенной плюшевой пряжи."
-  },
-  {
-    "category": "toys",
-    "title": "Радужные зайчата",
-    "desc": "Пара длинноухих зайчиков из разноцветной меланжевой пряжи."
-  },
-  {
-    "category": "clothes_shoes",
-    "title": "Вязаный кардиган",
-    "desc": "Уютный женский кардиган молочного цвета крупной вязки."
-  },
-  {
-    "category": "toys",
-    "title": "Зайка в красном платье",
-    "desc": "Плюшевая зайка сиреневого оттенка в нарядном красном платье."
-  },
-  {
-    "category": "toys",
-    "title": "Мышка в синем сарафане",
-    "desc": "Вязаная мышка с большими ушками в синем вязаном платье."
-  },
-  {
-    "category": "toys",
-    "title": "Веселый лягушонок",
-    "desc": "Зеленый вязаный лягушонок в синем комбинезоне с белой отделкой."
-  },
-  {
-    "category": "toys",
-    "title": "Песчаные динозавры",
-    "desc": "Пара вязаных динозавров бежевого оттенка на рабочем столе автора."
-  },
-  {
-    "category": "accessories",
-    "title": "Вязаные елочки",
-    "desc": "Набор декоративных вязаных елочек для украшения новогоднего интерьера."
-  },
-  {
-    "category": "toys",
-    "title": "Щенки-амигуруми",
-    "desc": "Мягкие вязаные щенки в штанишках на сером студийном фоне."
-  },
-  {
-    "category": "toys",
-    "title": "Процесс вязки зайки",
-    "desc": "Серая зайка и вязаная морковка в корзинке для рукоделия рядом с ноутбуком."
-  },
-  {
-    "category": "clothes_shoes",
-    "title": "Кеды в процессе работы",
-    "desc": "Синий вязаный кроссовок на клавиатуре ноутбука и спицы для носков."
-  },
-  {
-    "category": "clothes_shoes",
-    "title": "Пинетки-кроссовки",
-    "desc": "Вязаные детские пинетки в виде спортивных кроссовок серо-синей расцветки."
-  }
-];
-const galleryImages = [
-  "девочка_с_игрушкой_в_бахчисарае.jpg",
-  "девушка_на_набережной_ялты.jpg",
-  "82b58741-0fcb-42ed-98a1-46c5fe4f4613.jpg",
-  "881b7452-7d72-4a5a-ac40-03232ce4dc91.jpg",
-  "f34ed442-91a5-4012-89e5-f0b9b06b88ec.jpg",
-  "79f746d3-50a6-4545-9e48-ca6dbc7a69ba.png",
-  "ec8d3142-f26a-452d-b2c5-c634891e4487.png",
-  "M6LARJ3kfVI148YX9OQYSJAcnteLpwwA2enxTzuor_wDlPCWoQ_R-Vr4R0PIPlQWRRqRQaCDRx1ZmyUQcIW_TbvF.jpg",
-  "O-0NSJCGIf2Zqj6zfsHfQf8O5_Ve-WQsFkZzQgjAvcTeUqfX2ZYXlYoLHv7o9CITwRAHPOSmucz5Ec_daHfAARPi.jpg",
-  "aE6P_JAJxW854HsI0Onu_0Y-GnQ2dGdfdd6P-p4KhfdYkT4LuiZQybwKzHltGU_5Sv9ciunGXK_C4drMhn5VjUPt.jpg",
-  "wHPfP6gjiqlDF2e03vGueJrXzvYZlmDjRBruWaAg0wqONoUnlz7Ia9JlgeP1Chgddofw4xKY0gRpZehujgiBEaKD.jpg",
-  "5PkQaQkqA_7GlDWLCKN_WEBQ-q_WttVlFYM9N_IcWNvOJ-D04XDLl5b-EyZnG_EGU4o3ZK2soDN9BYP97Jt2kPwk.jpg",
-  "30sFTcI29XarFQg7iATSnKFgUiKVU4FjNtim4jgNM13HdqT1Cyv8iQY6GJEMo4I-joeqwlmDIgSYchdzK7Nyem3U.jpg",
-  "31DXVThxlurCJL2Hy38k3A3LTFFtwrG9ueqBvKX6V-jJxMtwYEJ8zd_-P6vu_sDSpnum3Y1c_ngG4tua4JZkExuP.jpg",
-  "6HVyHfd56MQOV93HkvIf3-giFArP5jaPV6DR4zydJUQ8H3zAT71cUVZzxhFUgrj_hivPehDpaRHQcdCgQf8dL1ft.jpg",
-  "F_mvRzDIFYwP5yYPaJY9QABe5ZtjJkjd9YKJW2-TPD5SyvVZZAad5kAVqk9hJZWBOMJfS6J0vSC51WCRjLj0Arvx.jpg",
-  "Onvfo8qoKLaMibIby3sciAPXCOWETqPa71h70JQWjcMozJ1G07BXish-JSV9ivSVy2Ul-WJdBDr9iuFTDTvkKkZq.jpg",
-  "PQGgxTn6Nca4txeHLnIqWZgoFhV4X6aji0hd8Wf0n3k8toIM6s_PDqm_7JPI3syEXhkZXRh9PFNgacWtL6_ZFVsx.jpg",
-  "Xop7XoEPn1BTDrtu0JIlt8ZrmlsLQDZaBLeyqypcxADTsu1A-UI86NdNFGHau5qY_vsZ1FS7jeigk0Tql72899TT.jpg",
-  "cnk1MwhapicwB5d4IZN-rmmkAWYNbaN4x2A0yoW4z3YPEeCnVxCK_BQa6Nh1Ixf74bXQiYcX_dSQxzu-zTM9BMrW.jpg",
-  "fptb2ts0YdxyLlnS6AtCumbc0UGPw4_-YG0yQniKIS7m9IiwPDiZTwSYLv9a3sdk7rNPuZRLxqh6a2uMBekq52tR.jpg",
-  "hkgTSHZ1nWoI6kjOv7wK-BFJFMfP9Q-FlkPQWVhQ2SI0_Iw7wG8zge_yvsssHH_z3fBXZ-aKa3oKzJxyzhayEYfs.jpg",
-  "i2r7f6bIZc-TcyiIAXTl15cHrS61_Qs4I7_sVYFsdo3QwVNqDU2OkRVYotQiHTyUiWVth3r2o01PwjQfN5dGUqIy.jpg",
-  "sma8n_8Iwmy_M2_sgTRcobboOBO4SW1B4TXsj9nETLdKETcsE7H6PguarV7jvhfH3fabVppDhMpzGtCG0juKMMdd.jpg",
-  "tezff2n4zW38-YjRlLi7kZBAjjT51YOD6pXYIcMxNqzWhXcXeTIS1-5tTSp88vIkZ2HCcnQ29yOW5zhB-2yFMd8d.jpg"
-];
-
-// Map image path to each item
-galleryData.forEach((item, index) => {
-  item.src = 'assets/img/' + galleryImages[index];
-});
-
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Mobile navigation toggle
+  // 1. Common Layout: Mobile navigation toggle
   const menuToggle = document.getElementById('menuToggle');
   const navLinks = document.getElementById('navLinks');
   
@@ -190,146 +28,350 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Sticky Header & Hero Background Parallax
+  // 2. Sticky Header and Hero Parallax (only on index.html)
   const heroSection = document.querySelector('.hero');
   window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+    if (header) {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
     }
     
     if (heroSection) {
       const scrollValue = window.scrollY;
-      // Adjust vertical position to scroll slower, starting from 70% focus
       heroSection.style.backgroundPosition = `center calc(70% + ${scrollValue * 0.45}px)`;
     }
   });
 
-  // 3. Render Gallery Items
-  const galleryGrid = document.getElementById('galleryGrid');
-  let activeFilter = 'all';
-  let filteredData = [...galleryData];
+  // 3. Load Portfolio Data from JSON
+  fetch('assets/data/gallery.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Ошибка при загрузке данных каталога');
+      }
+      return response.json();
+    })
+    .then(data => {
+      const items = data.items || [];
+      
+      // Determine which page we are currently on
+      const pathname = window.location.pathname;
+      
+      if (document.getElementById('sliderTrack')) {
+        // Page: index.html (Homepage with Slider)
+        initHomepageSlider(items);
+      } else if (document.getElementById('galleryGrid')) {
+        // Page: gallery.html (Catalog page)
+        initCatalogPage(items);
+      } else if (document.getElementById('productDetailContainer')) {
+        // Page: product.html (Details page)
+        initProductDetailPage(items);
+      }
+    })
+    .catch(error => {
+      console.error('Ошибка инициализации каталога:', error);
+      const loadingEl = document.querySelector('.product-loading');
+      if (loadingEl) {
+        loadingEl.innerHTML = `<div class="error-msg"><i class="fa-solid fa-triangle-exclamation"></i> Не удалось загрузить товары: ${error.message}</div>`;
+      }
+    });
 
-  function renderGallery() {
-    if (!galleryGrid) return;
-    galleryGrid.innerHTML = '';
+  // --- 4. Homepage Slider Logic ---
+  function initHomepageSlider(items) {
+    const sliderTrack = document.getElementById('sliderTrack');
+    const sliderContainer = document.getElementById('sliderContainer');
+    const prevBtn = document.getElementById('sliderPrev');
+    const nextBtn = document.getElementById('sliderNext');
     
-    filteredData.forEach((item, index) => {
-      const itemEl = document.createElement('div');
-      itemEl.className = 'gallery-item';
-      itemEl.setAttribute('data-category', item.category);
-      itemEl.setAttribute('data-index', index);
+    if (!sliderTrack) return;
+    
+    // Filter featured items (top: true)
+    const featuredItems = items.filter(item => item.top === true);
+    
+    if (featuredItems.length === 0) {
+      sliderTrack.innerHTML = '<p class="no-items">Нет избранных работ для отображения.</p>';
+      return;
+    }
+    
+    sliderTrack.innerHTML = '';
+    featuredItems.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'slider-item';
       
       let tagText = 'Игрушка';
       if (item.category === 'accessories') tagText = 'Аксессуар';
       if (item.category === 'clothes_shoes') tagText = 'Одежда / Обувь';
       
-      itemEl.innerHTML = `
-        <div class="gallery-img-container">
-          <img src="${item.src}" alt="${item.title}" loading="lazy">
-          <div class="gallery-overlay">
-            <div class="gallery-view-btn">
-              <i class="fas fa-expand"></i>
+      const priceText = item.price ? `${Number(item.price).toLocaleString('ru-RU')} ₽` : 'Цена по запросу';
+      
+      card.innerHTML = `
+        <a href="product.html?id=${item.id}" class="card-link-wrapper">
+          <div class="gallery-img-container">
+            <img src="${item.src}" alt="${item.title}" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="view-details-btn">Подробнее <i class="fa-solid fa-arrow-right"></i></span>
             </div>
           </div>
-        </div>
-        <div class="gallery-info">
-          <span class="gallery-tag">${tagText}</span>
-          <h3 class="gallery-title">${item.title}</h3>
-          <p class="gallery-desc">${item.desc}</p>
+          <div class="gallery-info">
+            <span class="gallery-tag">${tagText}</span>
+            <h3 class="gallery-title">${item.title}</h3>
+            <div class="gallery-price">${priceText}</div>
+          </div>
+        </a>
+      `;
+      sliderTrack.appendChild(card);
+    });
+    
+    // Slider Arrow Controls
+    if (sliderContainer && prevBtn && nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        const itemWidth = sliderTrack.querySelector('.slider-item').offsetWidth + 30; // Card width + gap
+        sliderContainer.scrollBy({ left: itemWidth, behavior: 'smooth' });
+      });
+      
+      prevBtn.addEventListener('click', () => {
+        const itemWidth = sliderTrack.querySelector('.slider-item').offsetWidth + 30;
+        sliderContainer.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+      });
+    }
+  }
+
+  // --- 5. Catalog Page Gallery Logic ---
+  function initCatalogPage(items) {
+    const galleryGrid = document.getElementById('galleryGrid');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    
+    if (!galleryGrid) return;
+    
+    let activeFilter = 'all';
+    
+    function renderCatalogItems(filteredItems) {
+      galleryGrid.innerHTML = '';
+      
+      if (filteredItems.length === 0) {
+        galleryGrid.innerHTML = '<p class="no-items">В данной категории пока нет изделий.</p>';
+        return;
+      }
+      
+      filteredItems.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'gallery-item';
+        
+        let tagText = 'Игрушка';
+        if (item.category === 'accessories') tagText = 'Аксессуар';
+        if (item.category === 'clothes_shoes') tagText = 'Одежда / Обувь';
+        
+        const priceText = item.price ? `${Number(item.price).toLocaleString('ru-RU')} ₽` : 'Цена по запросу';
+        
+        card.innerHTML = `
+          <a href="product.html?id=${item.id}" class="card-link-wrapper">
+            <div class="gallery-img-container">
+              <img src="${item.src}" alt="${item.title}" loading="lazy">
+              <div class="gallery-overlay">
+                <span class="view-details-btn">Подробнее <i class="fa-solid fa-arrow-right"></i></span>
+              </div>
+            </div>
+            <div class="gallery-info">
+              <span class="gallery-tag">${tagText}</span>
+              <h3 class="gallery-title">${item.title}</h3>
+              <div class="gallery-price">${priceText}</div>
+            </div>
+          </a>
+        `;
+        galleryGrid.appendChild(card);
+      });
+    }
+    
+    // Initial Render
+    renderCatalogItems(items);
+    
+    // Filtering Logic
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        activeFilter = btn.getAttribute('data-filter');
+        const filtered = activeFilter === 'all' ? items : items.filter(item => item.category === activeFilter);
+        renderCatalogItems(filtered);
+      });
+    });
+  }
+
+  // --- 6. Dynamic Product Detail Page Logic ---
+  function initProductDetailPage(items) {
+    const container = document.getElementById('productDetailContainer');
+    if (!container) return;
+    
+    // Parse URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const productId = urlParams.get('id');
+    
+    if (!productId) {
+      showProductError('Идентификатор товара не указан.');
+      return;
+    }
+    
+    // Find matching item
+    const item = items.find(i => i.id === productId);
+    
+    if (!item) {
+      showProductError('Извините, запрашиваемое изделие не найдено в каталоге.');
+      return;
+    }
+    
+    // Update Page Title
+    document.title = `${item.title} | Вязаные изделия Натальи Праотцевой`;
+    
+    // Prepare prices, categories, materials, and colors
+    let tagText = 'Вязаная игрушка';
+    if (item.category === 'accessories') tagText = 'Сумки и аксессуары';
+    if (item.category === 'clothes_shoes') tagText = 'Одежда и обувь';
+    
+    const priceText = item.price ? `${Number(item.price).toLocaleString('ru-RU')} ₽` : 'Цена по запросу';
+    const materialsContent = item.materials || 'Использованы качественные экологичные материалы ручной вязки.';
+    
+    // Build Color Badges
+    const colorsList = item.colors || [];
+    let colorsHTML = '';
+    if (colorsList.length > 0) {
+      colorsHTML = `
+        <div class="detail-block">
+          <h4 class="detail-block-title">Доступные цвета:</h4>
+          <div class="color-badges">
+            ${colorsList.map(c => `<span class="color-badge">${c}</span>`).join('')}
+          </div>
         </div>
       `;
-      
-      // Open Lightbox on click
-      itemEl.addEventListener('click', () => openLightbox(index));
-      galleryGrid.appendChild(itemEl);
+    }
+    
+    // Build Secondary Gallery Thumbnails
+    const subImages = item.gallery || [];
+    let galleryHTML = '';
+    if (subImages.length > 0) {
+      galleryHTML = `
+        <div class="product-gallery-thumbnails">
+          <div class="thumbnail active" data-src="${item.src}">
+            <img src="${item.src}" alt="${item.title} основной ракурс">
+          </div>
+          ${subImages.map((img, idx) => `
+            <div class="thumbnail" data-src="${img}">
+              <img src="${img}" alt="${item.title} ракурс ${idx + 2}">
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+    
+    // Populate the container HTML
+    container.innerHTML = `
+      <div class="product-grid">
+        <!-- Visual/Gallery Column -->
+        <div class="product-visual-col">
+          <div class="product-main-image">
+            <img id="mainProductImg" src="${item.src}" alt="${item.title}">
+          </div>
+          ${galleryHTML}
+        </div>
+        
+        <!-- Info Column -->
+        <div class="product-info-col">
+          <span class="product-category-tag">${tagText}</span>
+          <h1 class="product-title-heading">${item.title}</h1>
+          <div class="product-price-large">${priceText}</div>
+          
+          <div class="product-desc-block">
+            <h3 class="detail-section-title">Описание</h3>
+            <p>${item.desc}</p>
+          </div>
+          
+          <div class="detail-block">
+            <h4 class="detail-block-title">Материалы:</h4>
+            <p class="detail-block-text">${materialsContent}</p>
+          </div>
+          
+          ${colorsHTML}
+          
+          <!-- Order Form CTA -->
+          <div class="product-order-cta">
+            <h3 class="order-cta-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Заказать такое же изделие</h3>
+            <p class="order-cta-desc">Каждое изделие вяжется вручную под заказ. Вы можете указать индивидуальные пожелания по цвету и размеру в форме ниже.</p>
+            
+            <form id="productOrderForm" class="product-page-form">
+              <div class="form-grid-compact">
+                <div class="form-group-compact">
+                  <input type="text" id="prodOrderName" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group-compact">
+                  <input type="text" id="prodOrderContact" placeholder="Телефон или Telegram" required>
+                </div>
+                <div class="form-group-compact full-width">
+                  <textarea id="prodOrderMessage" rows="3" required>Здравствуйте! Меня заинтересовало изделие "${item.title}" (${priceText}). Хотелось бы обсудить возможность заказа...</textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn-submit">Отправить заявку мастеру</button>
+              <div class="form-status" id="prodFormStatus"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    `;
+    
+    // Thumbnail Clicks Handler
+    const thumbnails = container.querySelectorAll('.thumbnail');
+    const mainImg = container.querySelector('#mainProductImg');
+    thumbnails.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        thumbnails.forEach(t => t.classList.remove('active'));
+        thumb.classList.add('active');
+        const targetSrc = thumb.getAttribute('data-src');
+        mainImg.src = targetSrc;
+      });
     });
+    
+    // Product Page Form Submit Handler
+    const form = container.querySelector('#productOrderForm');
+    const formStatus = container.querySelector('#prodFormStatus');
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.textContent = 'Отправка заявки...';
+        submitBtn.disabled = true;
+        
+        setTimeout(() => {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
+          form.reset();
+          if (formStatus) {
+            formStatus.textContent = 'Спасибо! Ваша заявка успешно отправлена. Наталья свяжется с вами для обсуждения деталей.';
+            formStatus.className = 'form-status success';
+            formStatus.style.display = 'block';
+          }
+        }, 1500);
+      });
+    }
   }
-
-  // 4. Filtering Logic
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      filterButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      
-      activeFilter = btn.getAttribute('data-filter');
-      if (activeFilter === 'all') {
-        filteredData = [...galleryData];
-      } else {
-        filteredData = galleryData.filter(item => item.category === activeFilter);
-      }
-      renderGallery();
-    });
-  });
-
-  // Initial render
-  renderGallery();
-
-  // 5. Lightbox Lightbox Modal Logic
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightboxImg');
-  const lightboxTitle = document.getElementById('lightboxTitle');
-  const lightboxDesc = document.getElementById('lightboxDesc');
-  const lightboxClose = document.getElementById('lightboxClose');
-  const lightboxPrev = document.getElementById('lightboxPrev');
-  const lightboxNext = document.getElementById('lightboxNext');
-  let currentLightboxIndex = 0;
-
-  function openLightbox(index) {
-    if (!lightbox) return;
-    currentLightboxIndex = index;
-    updateLightboxContent();
-    lightbox.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Disable scroll background
+  
+  function showProductError(message) {
+    const container = document.getElementById('productDetailContainer');
+    if (container) {
+      container.innerHTML = `
+        <div class="product-error-box">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <h3>Товар не найден</h3>
+          <p>${message}</p>
+          <a href="gallery.html" class="btn-primary" style="margin-top: 20px; display: inline-block;">Вернуться в каталог</a>
+        </div>
+      `;
+    }
   }
-
-  function closeLightbox() {
-    if (!lightbox) return;
-    lightbox.classList.remove('active');
-    document.body.style.overflow = 'auto'; // Enable scroll
-  }
-
-  function updateLightboxContent() {
-    const item = filteredData[currentLightboxIndex];
-    if (!item) return;
-    lightboxImg.src = item.src;
-    lightboxTitle.textContent = item.title;
-    lightboxDesc.textContent = item.desc;
-  }
-
-  function showNextImage(e) {
-    if (e) e.stopPropagation();
-    currentLightboxIndex = (currentLightboxIndex + 1) % filteredData.length;
-    updateLightboxContent();
-  }
-
-  function showPrevImage(e) {
-    if (e) e.stopPropagation();
-    currentLightboxIndex = (currentLightboxIndex - 1 + filteredData.length) % filteredData.length;
-    updateLightboxContent();
-  }
-
-  if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
-  if (lightboxNext) lightboxNext.addEventListener('click', showNextImage);
-  if (lightboxPrev) lightboxPrev.addEventListener('click', showPrevImage);
-  if (lightbox) {
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) closeLightbox();
-    });
-  }
-
-  // Keyboard navigation for Lightbox
-  document.addEventListener('keydown', (e) => {
-    if (!lightbox || !lightbox.classList.contains('active')) return;
-    if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowRight') showNextImage();
-    if (e.key === 'ArrowLeft') showPrevImage();
-  });
-
-  // 6. Interactive Contact Form Submission
+  
+  // 7. Interactive Contact Form on Main Page (only if exists)
   const contactForm = document.getElementById('orderForm');
   const formStatus = document.getElementById('formStatus');
 
@@ -339,14 +381,12 @@ document.addEventListener('DOMContentLoaded', () => {
       
       const name = document.getElementById('formName').value.trim();
       const contact = document.getElementById('formContact').value.trim();
-      const message = document.getElementById('formMessage').value.trim();
       
       if (!name || !contact) {
         showFormStatus('Пожалуйста, заполните имя и контактные данные.', 'error');
         return;
       }
       
-      // Simulate successful request submission
       const submitBtn = contactForm.querySelector('button[type="submit"]');
       const originalText = submitBtn.textContent;
       submitBtn.textContent = 'Отправка...';
@@ -365,26 +405,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!formStatus) return;
     formStatus.textContent = msg;
     formStatus.className = 'form-status ' + type;
-    
-    // Auto-scroll to status
     formStatus.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    
-    // Hide status after 8 seconds if successful
     if (type === 'success') {
       setTimeout(() => {
         formStatus.style.display = 'none';
       }, 8000);
     }
   }
-  
-  // 7. Scroll Animation triggers using Intersection Observer
+
+  // 8. Scroll Animation triggers using Intersection Observer
   const animatedElements = document.querySelectorAll('.category-card, .about-content, .about-visual, .contact-container');
-  
   const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
   };
-  
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
