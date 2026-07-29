@@ -321,17 +321,104 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
     
-    // Thumbnail Clicks Handler
+    // Thumbnail Clicks Handler & Lightbox integration
     const thumbnails = container.querySelectorAll('.thumbnail');
     const mainImg = container.querySelector('#mainProductImg');
-    thumbnails.forEach(thumb => {
+    const productImages = [item.src, ...subImages];
+    let currentImgIndex = 0;
+    
+    thumbnails.forEach((thumb, index) => {
       thumb.addEventListener('click', () => {
         thumbnails.forEach(t => t.classList.remove('active'));
         thumb.classList.add('active');
         const targetSrc = thumb.getAttribute('data-src');
         mainImg.src = targetSrc;
+        currentImgIndex = productImages.indexOf(targetSrc);
+        if (currentImgIndex === -1) currentImgIndex = 0;
       });
     });
+
+    // Lightbox Functionality
+    const lightbox = document.getElementById('productLightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxTitle = document.getElementById('lightboxTitle');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxPrev = document.getElementById('lightboxPrev');
+    const lightboxNext = document.getElementById('lightboxNext');
+
+    if (mainImg && lightbox && lightboxImg) {
+      // Add cursor pointer to indicate it's clickable
+      mainImg.style.cursor = 'pointer';
+      mainImg.title = 'Нажмите, чтобы увеличить изображение';
+      
+      mainImg.addEventListener('click', () => {
+        lightboxImg.src = productImages[currentImgIndex];
+        if (lightboxTitle) lightboxTitle.textContent = item.title;
+        lightbox.classList.add('active');
+        
+        // Hide navigation arrows if there is only 1 image
+        if (productImages.length <= 1) {
+          if (lightboxPrev) lightboxPrev.style.display = 'none';
+          if (lightboxNext) lightboxNext.style.display = 'none';
+        } else {
+          if (lightboxPrev) lightboxPrev.style.display = 'flex';
+          if (lightboxNext) lightboxNext.style.display = 'flex';
+        }
+      });
+    }
+
+    if (lightbox) {
+      // Close Lightbox
+      const closeProductLightbox = () => {
+        lightbox.classList.remove('active');
+      };
+      
+      if (lightboxClose) lightboxClose.addEventListener('click', closeProductLightbox);
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox || e.target.classList.contains('lightbox-content')) {
+          closeProductLightbox();
+        }
+      });
+      
+      // Prev/Next Navigation inside Lightbox
+      const showImage = (idx) => {
+        currentImgIndex = (idx + productImages.length) % productImages.length;
+        const currentSrc = productImages[currentImgIndex];
+        lightboxImg.src = currentSrc;
+        
+        // Synch active thumbnail indicator
+        if (thumbnails.length > 0) {
+          thumbnails.forEach(t => t.classList.remove('active'));
+          const activeThumb = Array.from(thumbnails).find(t => t.getAttribute('data-src') === currentSrc);
+          if (activeThumb) activeThumb.classList.add('active');
+          if (mainImg) mainImg.src = currentSrc;
+        }
+      };
+
+      if (lightboxPrev) {
+        lightboxPrev.addEventListener('click', (e) => {
+          e.stopPropagation();
+          showImage(currentImgIndex - 1);
+        });
+      }
+      
+      if (lightboxNext) {
+        lightboxNext.addEventListener('click', (e) => {
+          e.stopPropagation();
+          showImage(currentImgIndex + 1);
+        });
+      }
+      
+      // Keyboard Navigation
+      document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeProductLightbox();
+        if (productImages.length > 1) {
+          if (e.key === 'ArrowLeft') showImage(currentImgIndex - 1);
+          if (e.key === 'ArrowRight') showImage(currentImgIndex + 1);
+        }
+      });
+    }
     
     // Product Page Form Submit Handler
     const form = container.querySelector('#productOrderForm');
