@@ -344,10 +344,15 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = 'Отправка заявки...';
         submitBtn.disabled = true;
         
-        fetch('/', {
+        const formData = new FormData(form);
+        if (!formData.has('form-name')) {
+          formData.append('form-name', 'product-order');
+        }
+
+        fetch(window.location.pathname, {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(new FormData(form)).toString()
+          body: new URLSearchParams(formData).toString()
         })
         .then(response => {
           submitBtn.textContent = originalText;
@@ -361,7 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           } else {
             if (formStatus) {
-              formStatus.textContent = 'Ошибка отправки. Пожалуйста, попробуйте еще раз.';
+              formStatus.textContent = 'Ошибка отправки (статус: ' + response.status + '). Пожалуйста, попробуйте еще раз.';
               formStatus.className = 'form-status error';
               formStatus.style.display = 'block';
             }
@@ -415,10 +420,15 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.textContent = 'Отправка...';
       submitBtn.disabled = true;
       
-      fetch('/', {
+      const formData = new FormData(contactForm);
+      if (!formData.has('form-name')) {
+        formData.append('form-name', 'contact-homepage');
+      }
+
+      fetch(window.location.pathname, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(contactForm)).toString()
+        body: new URLSearchParams(formData).toString()
       })
       .then(response => {
         submitBtn.textContent = originalText;
@@ -427,7 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
           contactForm.reset();
           showFormStatus('Спасибо за ваш запрос! Наталья свяжется с вами в ближайшее время.', 'success');
         } else {
-          showFormStatus('Произошла ошибка при отправке. Пожалуйста, попробуйте еще раз.', 'error');
+          showFormStatus('Произошла ошибка при отправке (статус: ' + response.status + '). Пожалуйста, попробуйте еще раз.', 'error');
         }
       })
       .catch(err => {
