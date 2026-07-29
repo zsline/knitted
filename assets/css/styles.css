@@ -1675,3 +1675,41 @@ footer {
     flex: 0 0 100%;
   }
 }
+
+/* Lightbox Slider Styles */
+.lightbox-slider-container {
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-slider-track {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+}
+
+.lightbox-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.lightbox-slide img {
+  max-width: 90%;
+  max-height: 75vh;
+  border-radius: var(--border-radius-sm);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  object-fit: contain;
+  /* pointer-events: none removed to allow clicks on images */
+}

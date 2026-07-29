@@ -107,17 +107,21 @@
 
   <!-- Lightbox Modal for Image Enlargement -->
   <div class="lightbox" id="productLightbox">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
-    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Назад"><i class="fa-solid fa-chevron-left"></i></button>
-    
     <div class="lightbox-content">
-      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
+      <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Назад"><i class="fa-solid fa-chevron-left"></i></button>
+      
+      <div class="lightbox-slider-container">
+        <div class="lightbox-slider-track" id="lightboxSliderTrack">
+          <!-- RENDERED DYNAMICALLY VIA JAVASCRIPT -->
+        </div>
+      </div>
       <div class="lightbox-caption">
         <h3 class="lightbox-title" id="lightboxTitle">Название работы</h3>
       </div>
+      
+      <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Вперед"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
-    
-    <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Вперед"><i class="fa-solid fa-chevron-right"></i></button>
   </div>
 
   <!-- Main JavaScript File -->

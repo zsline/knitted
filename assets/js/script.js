@@ -338,21 +338,30 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Lightbox Functionality
+    // Lightbox Functionality (Sliding Track & Swipes)
     const lightbox = document.getElementById('productLightbox');
-    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxSliderTrack = document.getElementById('lightboxSliderTrack');
     const lightboxTitle = document.getElementById('lightboxTitle');
     const lightboxClose = document.getElementById('lightboxClose');
     const lightboxPrev = document.getElementById('lightboxPrev');
     const lightboxNext = document.getElementById('lightboxNext');
 
-    if (mainImg && lightbox && lightboxImg) {
+    if (mainImg && lightbox && lightboxSliderTrack) {
       // Add cursor pointer to indicate it's clickable
       mainImg.style.cursor = 'pointer';
       mainImg.title = 'Нажмите, чтобы увеличить изображение';
       
       mainImg.addEventListener('click', () => {
-        lightboxImg.src = productImages[currentImgIndex];
+        // Render track slides dynamically
+        lightboxSliderTrack.innerHTML = productImages.map(img => `
+          <div class="lightbox-slide">
+            <img src="${img}" alt="${item.title}">
+          </div>
+        `).join('');
+        
+        // Snap directly to the current image's offset
+        lightboxSliderTrack.style.transform = `translateX(-${currentImgIndex * 100}%)`;
+        
         if (lightboxTitle) lightboxTitle.textContent = item.title;
         lightbox.classList.add('active');
         
@@ -374,19 +383,19 @@ document.addEventListener('DOMContentLoaded', () => {
       };
       
       if (lightboxClose) lightboxClose.addEventListener('click', closeProductLightbox);
-      lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox || e.target.classList.contains('lightbox-content')) {
-          closeProductLightbox();
-        }
-      });
       
-      // Prev/Next Navigation inside Lightbox
+      // Prev/Next Navigation inside Lightbox (Smooth Sliding)
       const showImage = (idx) => {
         currentImgIndex = (idx + productImages.length) % productImages.length;
         const currentSrc = productImages[currentImgIndex];
-        lightboxImg.src = currentSrc;
         
-        // Synch active thumbnail indicator
+        // Translate the track horizontally (smooth CSS transition applies)
+        if (lightboxSliderTrack) {
+          lightboxSliderTrack.style.transition = 'transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+          lightboxSliderTrack.style.transform = `translateX(-${currentImgIndex * 100}%)`;
+        }
+        
+        // Sync active thumbnail indicator and main image on product page
         if (thumbnails.length > 0) {
           thumbnails.forEach(t => t.classList.remove('active'));
           const activeThumb = Array.from(thumbnails).find(t => t.getAttribute('data-src') === currentSrc);
@@ -418,6 +427,93 @@ document.addEventListener('DOMContentLoaded', () => {
           if (e.key === 'ArrowRight') showImage(currentImgIndex + 1);
         }
       });
+
+      // Unified Drag and Swipe Functionality (Mouse & Touch)
+      let isDragging = false;
+      let startX = 0;
+      let dragDeltaX = 0;
+      
+      const getEventX = (e) => {
+        return e.touches ? e.touches[0].clientX : e.clientX;
+      };
+
+      const dragStart = (e) => {
+        // Prevent default browser image dragging only for mouse events
+        if (e.type === 'mousedown') {
+          if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+          }
+        }
+        isDragging = true;
+        startX = getEventX(e);
+        dragDeltaX = 0;
+        
+        if (lightboxSliderTrack) {
+          // Disable smooth transition during drag so it tracks the pointer instantly
+          lightboxSliderTrack.style.transition = 'none';
+        }
+      };
+
+      const dragMove = (e) => {
+        if (!isDragging) return;
+        const currentX = getEventX(e);
+        dragDeltaX = currentX - startX;
+        
+        if (lightboxSliderTrack) {
+          // Move the track in real-time as the user drags
+          const trackWidth = lightboxSliderTrack.offsetWidth;
+          const currentPercentOffset = -currentImgIndex * 100;
+          const dragPercentOffset = (dragDeltaX / trackWidth) * 100;
+          lightboxSliderTrack.style.transform = `translateX(${currentPercentOffset + dragPercentOffset}%)`;
+        }
+      };
+
+      const dragEnd = (e) => {
+        if (!isDragging) return;
+        isDragging = false;
+        
+        // Re-enable smooth transition
+        if (lightboxSliderTrack) {
+          lightboxSliderTrack.style.transition = 'transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+        }
+
+        const absDelta = Math.abs(dragDeltaX);
+
+        if (absDelta < 5) {
+          // 1. CLICK DETECTED (very small move): Check where click occurred to close
+          const clickedElement = e.target;
+          // If clicked outside of the image itself, close the modal
+          if (clickedElement.classList.contains('lightbox-slide') || 
+              clickedElement.classList.contains('lightbox-slider-container') || 
+              clickedElement === lightbox) {
+            closeProductLightbox();
+          }
+        } else {
+          // 2. SWIPE/DRAG DETECTED (large move): Navigate or snap back
+          if (productImages.length > 1 && absDelta > 75) {
+            if (dragDeltaX < 0) {
+              // Dragged Left -> Next slide
+              showImage(currentImgIndex + 1);
+            } else {
+              // Dragged Right -> Prev slide
+              showImage(currentImgIndex - 1);
+            }
+          } else {
+            // Dragged too little -> Snap back to current slide
+            showImage(currentImgIndex);
+          }
+        }
+      };
+
+      // Mouse drag listeners
+      lightbox.addEventListener('mousedown', dragStart);
+      window.addEventListener('mousemove', dragMove);
+      window.addEventListener('mouseup', dragEnd);
+
+      // Touch swipe listeners
+      lightbox.addEventListener('touchstart', dragStart, { passive: true });
+      lightbox.addEventListener('touchmove', dragMove, { passive: true });
+      lightbox.addEventListener('touchend', dragEnd, { passive: true });
     }
     
     // Product Page Form Submit Handler
