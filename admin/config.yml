@@ -26,6 +26,6 @@ collections:
               - { label: "Материалы", name: "materials", widget: "text" }
               - { label: "Доступные цвета", name: "colors", widget: "list", default: ["Серый", "Белый"] }
               - { label: "Главное фото", name: "src", widget: "image" }
-              - { label: "Галерея дополнительных фото", name: "gallery", widget: "list", field: {label: "Изображение", widget: "image"}, required: false }
+              - { label: "Галерея дополнительных фото", name: "gallery", widget: "list", field: {label: "Изображение", name: "image", widget: "image"}, required: false }
               - { label: "Показывать на главной (Top)", name: "top", widget: "boolean", default: false }
               - { label: "Описание", name: "desc", widget: "text" }
