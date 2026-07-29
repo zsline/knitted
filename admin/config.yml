@@ -2,14 +2,14 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "knitted/assets/img"
+media_folder: "assets/img"
 public_folder: "assets/img"
 
 collections:
   - name: "data"
     label: "Данные сайта"
     files:
-      - file: "knitted/assets/data/gallery.json"
+      - file: "assets/data/gallery.json"
         name: "gallery"
         label: "Каталог изделий"
         format: "json"
