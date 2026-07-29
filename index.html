@@ -264,19 +264,19 @@
         <!-- Contact Form Wrapper -->
         <div class="contact-form-wrapper">
           <h3 class="form-title">Заявка на индивидуальный заказ</h3>
-          <form id="orderForm">
+          <form id="orderForm" name="contact-homepage" method="POST" data-netlify="true">
             <div class="form-grid">
               <div class="form-group">
                 <label for="formName">Ваше имя *</label>
-                <input type="text" id="formName" class="form-control" placeholder="Иван" required>
+                <input type="text" id="formName" name="name" class="form-control" placeholder="Иван" required>
               </div>
               <div class="form-group">
                 <label for="formContact">Телефон или ник Telegram/VK *</label>
-                <input type="text" id="formContact" class="form-control" placeholder="@username или +7..." required>
+                <input type="text" id="formContact" name="contact" class="form-control" placeholder="@username или +7..." required>
               </div>
               <div class="form-group full-width">
                 <label for="formCategory">Категория изделия</label>
-                <select id="formCategory" class="form-control">
+                <select id="formCategory" name="category" class="form-control">
                   <option value="toys">Вязаная игрушка</option>
                   <option value="accessories">Сумка или аксессуар</option>
                   <option value="clothes_shoes">Одежда или обувь</option>
@@ -285,7 +285,7 @@
               </div>
               <div class="form-group full-width">
                 <label for="formMessage">Пожелания к заказу (цвет, размер, детали) *</label>
-                <textarea id="formMessage" class="form-control" placeholder="Опишите, какое изделие вы хотите заказать..." required></textarea>
+                <textarea id="formMessage" name="message" class="form-control" placeholder="Опишите, какое изделие вы хотите заказать..." required></textarea>
               </div>
             </div>
             

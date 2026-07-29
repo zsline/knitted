@@ -49,6 +49,13 @@
         <a href="gallery.html"><i class="fa-solid fa-arrow-left"></i> Вернуться в галерею</a>
       </div>
 
+      <!-- Hidden form for Netlify Forms parser to detect dynamic submission -->
+      <form name="product-order" data-netlify="true" hidden>
+        <input type="text" name="name" />
+        <input type="text" name="contact" />
+        <textarea name="message"></textarea>
+      </form>
+
       <div class="product-detail-container" id="productDetailContainer">
         <!-- RENDERED DYNAMICALLY VIA JAVASCRIPT -->
         <div class="product-loading">

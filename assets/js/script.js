@@ -300,16 +300,17 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3 class="order-cta-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Заказать такое же изделие</h3>
             <p class="order-cta-desc">Каждое изделие вяжется вручную под заказ. Вы можете указать индивидуальные пожелания по цвету и размеру в форме ниже.</p>
             
-            <form id="productOrderForm" class="product-page-form">
+            <form id="productOrderForm" class="product-page-form" name="product-order" method="POST">
+              <input type="hidden" name="form-name" value="product-order">
               <div class="form-grid-compact">
                 <div class="form-group-compact">
-                  <input type="text" id="prodOrderName" placeholder="Ваше имя" required>
+                  <input type="text" id="prodOrderName" name="name" placeholder="Ваше имя" required>
                 </div>
                 <div class="form-group-compact">
-                  <input type="text" id="prodOrderContact" placeholder="Телефон или Telegram" required>
+                  <input type="text" id="prodOrderContact" name="contact" placeholder="Телефон или Telegram" required>
                 </div>
                 <div class="form-group-compact full-width">
-                  <textarea id="prodOrderMessage" rows="3" required>Здравствуйте! Меня заинтересовало изделие "${item.title}" (${priceText}). Хотелось бы обсудить возможность заказа...</textarea>
+                  <textarea id="prodOrderMessage" name="message" rows="3" required>Здравствуйте! Меня заинтересовало изделие "${item.title}" (${priceText}). Хотелось бы обсудить возможность заказа...</textarea>
                 </div>
               </div>
               <button type="submit" class="btn-submit">Отправить заявку мастеру</button>
@@ -343,16 +344,38 @@ document.addEventListener('DOMContentLoaded', () => {
         submitBtn.textContent = 'Отправка заявки...';
         submitBtn.disabled = true;
         
-        setTimeout(() => {
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        })
+        .then(response => {
           submitBtn.textContent = originalText;
           submitBtn.disabled = false;
-          form.reset();
+          if (response.ok) {
+            form.reset();
+            if (formStatus) {
+              formStatus.textContent = 'Спасибо! Ваша заявка успешно отправлена. Наталья свяжется с вами для обсуждения деталей.';
+              formStatus.className = 'form-status success';
+              formStatus.style.display = 'block';
+            }
+          } else {
+            if (formStatus) {
+              formStatus.textContent = 'Ошибка отправки. Пожалуйста, попробуйте еще раз.';
+              formStatus.className = 'form-status error';
+              formStatus.style.display = 'block';
+            }
+          }
+        })
+        .catch(err => {
+          submitBtn.textContent = originalText;
+          submitBtn.disabled = false;
           if (formStatus) {
-            formStatus.textContent = 'Спасибо! Ваша заявка успешно отправлена. Наталья свяжется с вами для обсуждения деталей.';
-            formStatus.className = 'form-status success';
+            formStatus.textContent = 'Ошибка сети. Проверьте интернет-соединение.';
+            formStatus.className = 'form-status error';
             formStatus.style.display = 'block';
           }
-        }, 1500);
+        });
       });
     }
   }
@@ -392,12 +415,26 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.textContent = 'Отправка...';
       submitBtn.disabled = true;
       
-      setTimeout(() => {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(new FormData(contactForm)).toString()
+      })
+      .then(response => {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
-        contactForm.reset();
-        showFormStatus('Спасибо за ваш запрос! Наталья свяжется с вами в ближайшее время.', 'success');
-      }, 1500);
+        if (response.ok) {
+          contactForm.reset();
+          showFormStatus('Спасибо за ваш запрос! Наталья свяжется с вами в ближайшее время.', 'success');
+        } else {
+          showFormStatus('Произошла ошибка при отправке. Пожалуйста, попробуйте еще раз.', 'error');
+        }
+      })
+      .catch(err => {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+        showFormStatus('Произошла ошибка сети. Проверьте интернет-соединение.', 'error');
+      });
     });
   }
 
