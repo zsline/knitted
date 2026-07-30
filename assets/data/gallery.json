@@ -201,10 +201,12 @@
         "Розовый",
         "Белый"
       ],
-      "desc": "Пара вязаных динозавров бежевого оттенка на рабочем столе автора.",
-      "gallery": [],
+      "desc": "Мягкий, тёплый и добрый друг для вашего малыша. Он станет верным спутником в играх, уютным компаньоном перед сном и любимой игрушкой, с которой так приятно обниматься.",
+      "gallery": [
+        "assets/img/cnk1MwhapicwB5d4IZN-rmmkAWYNbaN4x2A0yoW4z3YPEeCnVxCK_BQa6Nh1Ixf74bXQiYcX_dSQxzu-zTM9BMrW.jpg"
+      ],
       "top": false,
-      "title": "Песчаные динозавры",
+      "title": "Маленький динозаврик",
       "id": "peschanye-dinozavry",
       "category": "toys"
     },
