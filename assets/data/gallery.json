@@ -84,18 +84,19 @@
       "category": "clothes_shoes"
     },
     {
-      "src": "assets/img/M6LARJ3kfVI148YX9OQYSJAcnteLpwwA2enxTzuor_wDlPCWoQ_R-Vr4R0PIPlQWRRqRQaCDRx1ZmyUQcIW_TbvF.jpg",
-      "price": "5500",
-      "materials": "Мягкая полушерстяная пряжа (меринос/акрил), натуральные деревянные пуговицы.",
+      "src": "assets/img/костюм-на-ребенке_1055388.jpg",
+      "price": "2500",
+      "materials": "Мягкая полушерстяная пряжа (меринос/акрил)",
       "colors": [
-        "Серый",
-        "Розовый",
         "Белый"
       ],
       "desc": "Мягкий желто-белый свитер и белые штанишки ручной работы для малыша.",
-      "gallery": [],
-      "top": false,
-      "title": "Детский хлопковый костюм",
+      "gallery": [
+        "assets/img/детали-застежек_1055366.jpg",
+        "assets/img/крупный-план-вязки_1055365.jpg"
+      ],
+      "top": true,
+      "title": "Детский костюм",
       "id": "detskiy-khlopkovyy-kostyum",
       "category": "clothes_shoes"
     },
