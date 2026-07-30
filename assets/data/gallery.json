@@ -162,17 +162,20 @@
       "category": "toys"
     },
     {
-      "src": "assets/img/PQGgxTn6Nca4txeHLnIqWZgoFhV4X6aji0hd8Wf0n3k8toIM6s_PDqm_7JPI3syEXhkZXRh9PFNgacWtL6_ZFVsx.jpg",
-      "price": "3500",
+      "src": "assets/img/chatgpt-image-30-июл.-2026-г.-13_23_46-1-.png",
+      "price": "800",
       "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
       "colors": [
         "Серый",
-        "Розовый",
         "Белый"
       ],
       "desc": "Вязаная мышка с большими ушками в синем вязаном платье.",
-      "gallery": [],
-      "top": false,
+      "gallery": [
+        "assets/img/chatgpt-image-30-июл.-2026-г.-13_24_07.png",
+        "assets/img/sleeping_child_with_toy_v3.jpg",
+        "assets/img/chatgpt-image-30-июл.-2026-г.-13_25_07.png"
+      ],
+      "top": true,
       "title": "Мышка в синем сарафане",
       "id": "myshka-v-sinem-sarafane",
       "category": "toys"
