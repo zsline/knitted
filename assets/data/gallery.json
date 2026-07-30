@@ -20,6 +20,23 @@
       "category": "toys"
     },
     {
+      "src": "assets/img/костюм-на-ребенке_1055388.jpg",
+      "price": "2500",
+      "materials": "Мягкая полушерстяная пряжа (меринос/акрил)",
+      "colors": [
+        "Белый"
+      ],
+      "desc": "Мягкий желто-белый свитер и белые штанишки ручной работы для малыша.",
+      "gallery": [
+        "assets/img/детали-застежек_1055366.jpg",
+        "assets/img/крупный-план-вязки_1055365.jpg"
+      ],
+      "top": true,
+      "title": "Детский костюм",
+      "id": "detskiy-khlopkovyy-kostyum",
+      "category": "clothes_shoes"
+    },
+    {
       "src": "assets/img/девушка_на_набережной_ялты.jpg",
       "price": "4500",
       "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
@@ -81,23 +98,6 @@
       "top": true,
       "title": "Вязаные кеды на закате",
       "id": "vyazanye-kedy-na-zakate",
-      "category": "clothes_shoes"
-    },
-    {
-      "src": "assets/img/костюм-на-ребенке_1055388.jpg",
-      "price": "2500",
-      "materials": "Мягкая полушерстяная пряжа (меринос/акрил)",
-      "colors": [
-        "Белый"
-      ],
-      "desc": "Мягкий желто-белый свитер и белые штанишки ручной работы для малыша.",
-      "gallery": [
-        "assets/img/детали-застежек_1055366.jpg",
-        "assets/img/крупный-план-вязки_1055365.jpg"
-      ],
-      "top": true,
-      "title": "Детский костюм",
-      "id": "detskiy-khlopkovyy-kostyum",
       "category": "clothes_shoes"
     },
     {
