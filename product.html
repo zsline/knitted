@@ -1,130 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Meta Tags -->
-  <title>Загрузка товара... | Мастерская Натальи Праотцевой</title>
-  <meta name="description" content="Подробное описание изделия, используемые материалы, доступные цвета и заказ ручной работы.">
-  
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Header & Navigation -->
-  <header>
-    <div class="nav-container">
-      <a href="index.html" class="logo" id="siteLogo">
-        НАТАЛЬЯ ПРАОТЦЕВА
-        <span>Мастерская вязаного уюта</span>
-      </a>
-      
-      <div class="menu-toggle" id="menuToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      
-      <nav class="nav-links" id="navLinks">
-        <a href="index.html">Главная</a>
-        <a href="index.html#categories">Направления</a>
-        <a href="gallery.html">Галерея работ</a>
-        <a href="index.html#about">Об авторе</a>
-        <a href="index.html#contact" class="btn-contact">Заказать</a>
-      </nav>
-    </div>
-  </header>
+    <!-- SEO Meta Tags -->
+    <title>Загрузка товара... | Мастерская Натальи Праотцевой</title>
+    <meta
+      name="description"
+      content="Подробное описание изделия, используемые материалы, доступные цвета и заказ ручной работы."
+    />
 
-  <!-- Product Detail Section -->
-  <section class="product-detail-section" style="padding-top: 140px; min-height: 80vh; padding-bottom: 80px;">
-    <div class="section-container">
-      
-      <!-- Breadcrumbs -->
-      <div class="breadcrumbs">
-        <a href="gallery.html"><i class="fa-solid fa-arrow-left"></i> Вернуться в галерею</a>
-      </div>
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-      <!-- Hidden form for Netlify Forms parser to detect dynamic submission -->
-      <form name="product-order" data-netlify="true" hidden>
-        <input type="text" name="name" />
-        <input type="text" name="contact" />
-        <textarea name="message"></textarea>
-      </form>
-
-      <div class="product-detail-container" id="productDetailContainer">
-        <!-- RENDERED DYNAMICALLY VIA JAVASCRIPT -->
-        <div class="product-loading">
-          <i class="fa-solid fa-spinner fa-spin"></i> Загрузка деталей товара...
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-brand">
-        <a href="index.html" class="logo">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <div class="nav-container">
+        <a href="index.html" class="logo" id="siteLogo">
           НАТАЛЬЯ ПРАОТЦЕВА
           <span>Мастерская вязаного уюта</span>
         </a>
-        <p>Создание уникальных вязаных игрушек, сумок и одежды ручной работы из экологически чистых материалов.</p>
-      </div>
-      
-      <div class="footer-links">
-        <h3>Разделы</h3>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="index.html#categories">Направления</a></li>
-          <li><a href="gallery.html">Галерея работ</a></li>
-          <li><a href="index.html#about">Об авторе</a></li>
-          <li><a href="index.html#contact">Сделать заказ</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer-contact">
-        <h3>Контакты</h3>
-        <p><i class="fa-solid fa-location-dot"></i> Россия, г. Челябинск</p>
-        <p><i class="fa-solid fa-envelope"></i> natalia.praotseva@mail.ru</p>
-        <p><i class="fa-solid fa-paper-plane"></i> Telegram: @Natalia_Praotseva</p>
-      </div>
-    </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2026 Мастерская Натальи Праотцевой. Все права защищены.</p>
-      <div class="footer-bottom-links">
-        <a href="#">Политика конфиденциальности</a>
-        <a href="#">Условия заказа</a>
-      </div>
-    </div>
-  </footer>
 
-  <!-- Lightbox Modal for Image Enlargement -->
-  <div class="lightbox" id="productLightbox">
-    <div class="lightbox-content">
-      <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
-      <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" aria-label="Назад"><i class="fa-solid fa-chevron-left"></i></button>
-      
-      <div class="lightbox-slider-container">
-        <div class="lightbox-slider-track" id="lightboxSliderTrack">
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Главная</a>
+          <a href="index.html#categories">Направления</a>
+          <a href="gallery.html">Галерея работ</a>
+          <a href="index.html#about">Об авторе</a>
+          <a href="index.html#contact" class="btn-contact">Заказать</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section
+      class="product-detail-section"
+      style="padding-top: 140px; min-height: 80vh; padding-bottom: 80px"
+    >
+      <div class="section-container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+          <a href="gallery.html"
+            ><i class="fa-solid fa-arrow-left"></i> Вернуться в галерею</a
+          >
+        </div>
+
+        <!-- Hidden form for Netlify Forms parser to detect dynamic submission -->
+        <form name="product-order" data-netlify="true" hidden>
+          <input type="text" name="name" />
+          <input type="text" name="contact" />
+          <textarea name="message"></textarea>
+        </form>
+
+        <div class="product-detail-container" id="productDetailContainer">
           <!-- RENDERED DYNAMICALLY VIA JAVASCRIPT -->
+          <div class="product-loading">
+            <i class="fa-solid fa-spinner fa-spin"></i> Загрузка деталей
+            товара...
+          </div>
         </div>
       </div>
-      <div class="lightbox-caption">
-        <h3 class="lightbox-title" id="lightboxTitle">Название работы</h3>
-      </div>
-      
-      <button class="lightbox-arrow lightbox-next" id="lightboxNext" aria-label="Вперед"><i class="fa-solid fa-chevron-right"></i></button>
-    </div>
-  </div>
+    </section>
 
-  <!-- Main JavaScript File -->
-  <script src="assets/js/script.js"></script>
-</body>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            НАТАЛЬЯ ПРАОТЦЕВА
+            <span>Мастерская вязаного уюта</span>
+          </a>
+          <p>
+            Создание уникальных вязаных игрушек, сумок и одежды ручной работы из
+            экологически чистых материалов.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Разделы</h3>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#categories">Направления</a></li>
+            <li><a href="gallery.html">Галерея работ</a></li>
+            <li><a href="index.html#about">Об авторе</a></li>
+            <li><a href="index.html#contact">Сделать заказ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Контакты</h3>
+          <p><i class="fa-solid fa-location-dot"></i> Россия, г. Челябинск</p>
+          <p><i class="fa-solid fa-envelope"></i> opeka174@mail.ru</p>
+          <p>
+            <a
+              href="https://vk.ru/pletenoe_iskustvo"
+              target="_blank"
+              rel="nofollow noopener"
+            ></a
+            ><i class="fa-brands fa-vk"></i> ВКонтакте
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Мастерская Натальи Праотцевой. Все права защищены.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Условия заказа</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox Modal for Image Enlargement -->
+    <div class="lightbox" id="productLightbox">
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Закрыть">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button
+          class="lightbox-arrow lightbox-prev"
+          id="lightboxPrev"
+          aria-label="Назад"
+        >
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="lightbox-slider-container">
+          <div class="lightbox-slider-track" id="lightboxSliderTrack">
+            <!-- RENDERED DYNAMICALLY VIA JAVASCRIPT -->
+          </div>
+        </div>
+        <div class="lightbox-caption">
+          <h3 class="lightbox-title" id="lightboxTitle">Название работы</h3>
+        </div>
+
+        <button
+          class="lightbox-arrow lightbox-next"
+          id="lightboxNext"
+          aria-label="Вперед"
+        >
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
