@@ -112,7 +112,7 @@
     },
     {
       "src": "assets/img/30sFTcI29XarFQg7iATSnKFgUiKVU4FjNtim4jgNM13HdqT1Cyv8iQY6GJEMo4I-joeqwlmDIgSYchdzK7Nyem3U.jpg",
-      "price": "900",
+      "price": "1200",
       "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
       "colors": [
         "Зеленый",
@@ -189,7 +189,7 @@
       "desc": "Набор декоративных вязаных елочек для украшения новогоднего интерьера. Можно поставить у компьютера дома или в офисе, создав себе сказочную новогоднюю атмосферу на каждый день. Иногда могут исполнять желания.",
       "gallery": [],
       "top": false,
-      "title": "Вязаные елочки",
+      "title": "Вязаные елочки ( Цена за 1 шт)",
       "id": "vyazanye-elochki",
       "category": "accessories"
     },
@@ -213,7 +213,7 @@
     },
     {
       "src": "assets/img/i2r7f6bIZc-TcyiIAXTl15cHrS61_Qs4I7_sVYFsdo3QwVNqDU2OkRVYotQiHTyUiWVth3r2o01PwjQfN5dGUqIy.jpg",
-      "price": "900",
+      "price": "1600",
       "materials": "Высококачественная хлопковая пряжа, гипоаллергенный наполнитель (холлофайбер), безопасная фурнитура.",
       "colors": [
         "Серый"
@@ -227,7 +227,7 @@
     },
     {
       "src": "assets/img/tezff2n4zW38-YjRlLi7kZBAjjT51YOD6pXYIcMxNqzWhXcXeTIS1-5tTSp88vIkZ2HCcnQ29yOW5zhB-2yFMd8d.jpg",
-      "price": "800",
+      "price": "1000",
       "materials": "Прочная хлопковая пряжа, мягкая текстильная подошва, надежные шнурки.",
       "colors": [
         "Серый",
@@ -237,13 +237,13 @@
       "desc": "Вязаные детские пинетки в виде спортивных кроссовок серо-синей расцветки.",
       "gallery": [],
       "top": false,
-      "title": "Пинетки-кроссовки",
+      "title": "Пинетки-кроссовки \"adidas\"",
       "id": "pinetki-krossovki",
       "category": "clothes_shoes"
     },
     {
       "src": "assets/img/1h0aw38xdf0dpg1zxwdfysyp-fhi9atgalmpr-ln9bvc2ozquingfwbeeoszavreiii1gma69fhw0q1bn5rdearb.jpg",
-      "price": "680",
+      "price": "800",
       "materials": "Шерсть",
       "colors": [
         "Серый"
@@ -251,7 +251,7 @@
       "desc": "Набор вязаных корзинок для конфет или косметики",
       "gallery": [],
       "top": false,
-      "title": "Корзинка вязаная",
+      "title": "Корзинка вязаная (Цена за 1 шт)",
       "id": "korzinka-vyaz",
       "category": "accessories"
     }
